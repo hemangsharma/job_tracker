@@ -18,6 +18,12 @@ A web application to help manage and track job applications, including applicati
 - Charting Library: Chart.js
 - Database: CSV files for data storage
 
+# Screenshots
+
+![1](screenshots/1.png)
+![2](screenshots/2.png)
+![3](screenshots/3.png)
+
 # Installation
 
 - Clone the Repository
