@@ -1,8 +1,21 @@
 # Job_Tracker
 
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A web application to help manage and track job applications, including application status updates, job descriptions, and CV analysis. Built with Flask, Bootstrap 4.5.2, and Chart.js.
 
-# Features
+## Table of Contents
+
+- [Features](#features)
+- [Technologies](#technologies)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [License](#license)
+
+
+## Features
 
 - Add Job Applications: Input details such as company, position, date applied, status, and job description.
 - View Job Applications: Display a list of all job applications with options to update statuses and view details.
@@ -10,7 +23,7 @@ A web application to help manage and track job applications, including applicati
 - CV Upload & Analysis: Upload and analyze your CV to get an acceptance percentage based on job descriptions and CV content.
 - Responsive Design: Mobile-friendly with a hamburger menu for navigation.
 
-# Technologies Used
+## Technologies
 
 - Backend: Flask
 - Frontend: HTML, CSS, JavaScript
@@ -18,13 +31,13 @@ A web application to help manage and track job applications, including applicati
 - Charting Library: Chart.js
 - Database: CSV files for data storage
 
-# Screenshots
+## Screenshots
 
 ![1](screenshots/1.png)
 ![2](screenshots/2.png)
 ![3](screenshots/3.png)
 
-# Installation
+## Installation
 
 - Clone the Repository
 
@@ -51,17 +64,17 @@ pip install -r requirements.txt
 flask run
 ```
 
-# Configuration
+## Configuration
 
 - CSV Data Storage: Data is stored in data/applications.csv. Make sure this file is properly set up to store application details.
 - CV Analysis: Place your CV PDF in the static folder and ensure the analysis script can read it.
 
-# Usage
+## Usage
 
 - Add Job Applications: Navigate to /add to input new job application details.
 - View Job Applications: Navigate to /view to see and update the list of applications.
 - View Application Status Chart: Navigate to /charts to see a visual representation of application statuses.
 
-# License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
