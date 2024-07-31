@@ -1,0 +1,53 @@
+/* Custom styles for the mobile navigation bar */
+.navbar {
+    background-color: #007bff;
+    border-bottom: 2px solid #0056b3;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        background-color: #007bff;
+        border-top: 2px solid #0056b3;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem;
+    }
+}

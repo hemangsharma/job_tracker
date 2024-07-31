@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>View Job Applications</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Date Applied</th>
+                <th>Status</th>
+                <th>Interview Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row.Company }}</td>
+                <td>{{ row.Position }}</td>
+                <td>{{ row['Date Applied'] }}</td>
+                <td>{{ row.Status }}</td>
+                <td>{{ row['Interview Date'] }}</td>
+                <td>
+                    <a href="{{ url_for('edit_application', company=row.Company) }}" class="btn btn-primary btn-sm">Edit</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
